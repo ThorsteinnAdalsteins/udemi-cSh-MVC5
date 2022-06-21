@@ -17,5 +17,16 @@ namespace Vidly.Controllers
 
             return View(movie);
         }
+
+        [Route("movies/edit/{id}")]
+        public ActionResult Edit(int id)
+        {
+
+            return Content("id = " + id);
+        }
+
+
     }
+
+
 }
